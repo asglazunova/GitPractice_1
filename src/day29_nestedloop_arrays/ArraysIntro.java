@@ -6,7 +6,7 @@ public class ArraysIntro {
         nums[0] = 5;
         nums[1] = 10;
         nums[2] = 7;
-
+        System.out.println("Yay stuff added");
         System.out.println( "value at index 0 = " + nums[0]);
         System.out.println( "value at index 0 = " + nums[1]);
         System.out.println( "value at index 0 = " + nums[2]);
