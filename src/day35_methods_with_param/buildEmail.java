@@ -5,7 +5,7 @@ import java.util.Locale;
 public class buildEmail {
     public static void main(String[] args) {
         buildEmail("anna", "gmail");
-        buildEmail("John Ward III", "verizon");
+        buildEmail("John Ward III", "VERIZON");
     }
     public static void buildEmail (String name , String domain){
 

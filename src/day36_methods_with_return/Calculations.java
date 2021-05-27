@@ -5,9 +5,9 @@ public class Calculations {
 
 
 
-        System.out.println("10+45 = " + Return.add(10, 45 ));
-        System.out.println("15-5= " + Return.minus(15, 5));
-        System.out.println("1*15 = " + Return.multiplication(1, 15));
-        System.out.println("40 / 2 = " +Return.divide(40, 2));
+        System.out.println("10+45 = " + Calculator.add(10, 45 ));
+        System.out.println("15-5= " + Calculator.minus(15, 5));
+        System.out.println("1*15 = " + Calculator.multiplication(1, 15));
+        System.out.println("40 / 2 = " + Calculator.divide(40, 2));
 }
     }

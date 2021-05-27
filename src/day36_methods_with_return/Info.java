@@ -15,6 +15,19 @@ public class Info {
         int age = getAge();
         int year = getRandomYear();
 
+        System.out.println("year = " + year);
+        System.out.println("age = " + age);
+        System.out.println("isMarried = " + isMarried);
+        System.out.println("name = " + name);
+
+        if(isMarried()) {
+            System.out.println("married");
+        } else {
+            System.out.println("single");
+        }
+
+
+
     }
     public static String fullName(){
         System.out.println("inside fullName method");
@@ -24,7 +37,8 @@ public class Info {
         return true;
     }
     public static int getAge() {
-        return 24;
+        int age = 26;
+        return age;
     }
     public static int getRandomYear() {
         Random random = new Random ();

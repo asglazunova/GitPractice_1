@@ -6,7 +6,7 @@ public class FirstMethod {
         displayMessage(); // 2nd call the method ;
 
         for (int i = 1; i <= 100; i++) {
-            System.out.println(i + " -");
+            System.out.print(i + " - ");
             displayMessage();
         }
     }

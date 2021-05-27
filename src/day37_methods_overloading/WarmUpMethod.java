@@ -41,7 +41,8 @@ public class WarmUpMethod {
     public static boolean login(String userName, String password) {
         String secretUsername = "cybertekStudent";
         String secretPassword = "abc123";
-        //return userName.equalsIgnoreCase(secretUserName) && password.equals(secretPassword);
+        //return userName.equalsIgnoreCase(secretUserName) && password.equals(secretPassword); -->
+        // we cna do it by using one line --> short method
 
         if (userName.equalsIgnoreCase(secretUsername) && password.equals(secretPassword)) {
             return true; //return true, and exit method here. return false will not run

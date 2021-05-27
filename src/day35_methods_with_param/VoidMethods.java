@@ -23,9 +23,11 @@ public class VoidMethods {
             }
             System.out.println();
         }
-        public static void displayUSAFlag(){
+        public static void
+        displayUSAFlag(){
             System.out.println("-----------FLAG OF USA------------");
-                String p1 = "* * * * * * ==================================\n * * * * *  ==================================";
+                String p1 = "* * * * * * ==================================" +
+                        "\n * * * * *  ==================================";
                 String p2 = "==============================================";
                 for (int i = 0; i < 4; i++) {
                     System.out.println(p1);

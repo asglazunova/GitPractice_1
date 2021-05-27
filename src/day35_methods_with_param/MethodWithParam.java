@@ -6,6 +6,8 @@ public class MethodWithParam {
         displayValue(99);
         int count = 55;
         displayValue(count);
+        int count1 = 16;
+        displayValue(count1);
         greetByName ("Anna");
         greetByName("Saim");
         String name = "Zenya";

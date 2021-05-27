@@ -5,6 +5,7 @@ import java.util.*;
 public class UniqueFromList {
     public static void main(String[] args) {
 //declare Integer arraylist with following numbers
+        //ArrayList<Sting>nameList = new ArrayList <String>();
         List<Integer> nums = new ArrayList<>(Arrays.asList(2,4,4,1,5,6,0,6));
         System.out.println(nums);
         // new arrayList to store only unique numbers
