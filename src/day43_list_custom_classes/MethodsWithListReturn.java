@@ -1,65 +1,63 @@
 package day43_list_custom_classes;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MethodsWithListReturn {
     public static void main(String[] args) {
-        //1 second = 1_000_000_000 nanosecond
-        long start = System.nanoTime(); // start counting time for time for arrayList
-        //System.out.println(System.nanoTime());
-        List<Integer> mlnNums = getIntegerList(); // returns ready ArrayList object . no need new Array
-        long end = System.nanoTime(); // end counting time
+        //1 second = 1_000_000_000 nanoseconds
+        long start = System.nanoTime(); //get starting time
+        List<Integer> mlnNums = getIntegerList();//returns ready ArrayList object. no need new Arra..
+        long end = System.nanoTime(); //get ending time
         double listSeconds = (end - start) / 1_000_000_000.0;
-        System.out.println("ArrayList time = " + (end - start));
+        System.out.println("ArrayList time = " + (end - start)); //print duration
         System.out.println("ArrayList seconds = " + listSeconds);
 
-
-        long st = System.nanoTime();
-        //System.out.println(mlnNums);
-        int[] arr= getIntegerArray();
-        long ed = System.nanoTime();
-        double seconds = (ed-st) / 1_000_000_000.0;
-        System.out.println("Array time = " + (ed - st));
+        long st = System.nanoTime(); //start
+        int[] arr = getIntegerArray();
+        long en = System.nanoTime(); //end
+        double seconds = (en - st) / 1_000_000_000.0;
+        System.out.println("Array time = " + (en - st));
         System.out.println("Array time seconds = " + seconds);
+
+
+        //System.out.println(mlnNums);
 
     }
     /**
      * getIntegerList
-     *No params
+     * No params
      * return List<Integer>
-     *     Loop from 0 - 1 000_000
-     *     and add to arrayList then return it
+     *    Loop from 0 - 1000_000
+     *    and add to arraylist then return it
      */
-    /** getIntegerList ... */
-    public static List<Integer> getIntegerList () {  // from line 18-23 -> method ,
-        List<Integer> nums = new ArrayList<>(); // new ArraList<>() -> new object created
-        for (int i = 0; i <= 1_000_000; i++) { // loop counts numbers from 0- 100000
-            nums.add(i); // nums added in to list to line number 19
+    public static List<Integer> getIntegerList() {
+        List<Integer> nums = new ArrayList<>();
+        for(int i = 0; i <= 1_000_000; i++) {
+            nums.add(i);
         }
         return nums;
     }
 
-        /**
-         *  getIntegerArray
-         *      *No params
-         *      * return int[]
-         *      *     Loop from 0 - 1 000_000
-         *      *     and add to int[] then return it
-         */
-
-        public static int[] getIntegerArray(){
-            //declare empty array with 1_000_001
-            int [] nums = new int [1_000_001];
-            // loop and assign numbers
-            for (int i=0; i<= 1_000_000 ; i++) {
-                nums[i] = i ;
-            }
-            return nums; //return
-        }
     /**
-     *
+     * getIntegerArray
+     * No params
+     * return int[]
+     *    Loop from 0 - 1000_000
+     *    and add to int[] then return it
      */
+    public static int[] getIntegerArray() {
+        //declare empty array with size - 1_000_001
+        int[] nums = new int[1_000_001];
+        //loop and assign numbers
+        for(int i = 0; i <= 1_000_000; i++) {
+            nums[i] = i;
+        }
+        return nums; //return
+    }
+
+    /**
+     * getDays
+     */
+
 }
-
-
-

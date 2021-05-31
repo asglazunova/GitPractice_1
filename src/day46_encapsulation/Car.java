@@ -1,51 +1,56 @@
 package day46_encapsulation;
 
 public class Car {
-    // encapsulated / hidden instance variables
+    //encapsulated/hidden instance variables
     private String model;
-    private int year ;
-    private int mileage ;
+    private int year;
+    private int mileage; //this.mileage = ..
 
-//setter method for model
-    public void setModel(String newModel) {
-        model = newModel;
-
+    //setter method for model
+    public void setModel(String carModel) {
+        model = carModel;
     }
-    // getter method for model
+    //getter method for model
     public String getModel() {
         return model;
     }
 
     //setter for year
-    public void setYear (int year) {
-        this.year = year; // this. picked for instance variable , it's mean this class
+    public void setYear(int year) {
+        this.year = year;
     }
+
     //getter for year
     public int getYear() {
         return year;
-
     }
-    // setter for mileage
+
+    //getter setter for mileage
+    //generate toString
+    public int getMileage() {
+        return mileage; //this.mileage; also works fine
+    }
+    //myCar.setMileage(45230);
     public void setMileage(int mileage) {
         this.mileage = mileage;
-
-
     }
 
-    public int getMileage() {
-        return mileage;
-    }
-        @Override
-        public String toString() {
-            return "Car " +
-                    "model = '" + model + '\'' +
-                    ", year=" + year +
-                    ", mileage=" + mileage ;
-// toString() is a specific method that exists in each and  every object
-// it is normally used to Describe the object with assigned data
-//it converts each instance variable values into a String and returns as 1
-//string value
-
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", year=" + year +
+                ", mileage=" + mileage +
+                '}';
     }
 }
+
+
+
+
+
+
+
+
+
+

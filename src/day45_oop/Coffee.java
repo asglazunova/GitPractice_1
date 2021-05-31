@@ -1,9 +1,10 @@
 package day45_oop;
 
-import javax.naming.NameAlreadyBoundException;
-
 public class Coffee {
-    double amount ;
+    /**
+     * can be 0 - 100 as a percentage
+     */
+    int amount;
     String type;
 
     @Override
@@ -14,17 +15,15 @@ public class Coffee {
                 '}';
     }
 
-    // can be 0 to 100 %
     public void refill() {
-
-        amount = 100 ;
+        amount = 100;
     }
-    public void drinkSomeAmount ( int someAmount) {
 
+    public void drink(int someAmount) {
         amount -= someAmount;
     }
-    public double getAmount() {
 
+    public int getAmount() {
         return amount;
     }
 
@@ -32,7 +31,7 @@ public class Coffee {
         type = newType;
     }
 
-    public String getType(){
+    public String getType() {
         return type;
     }
 
