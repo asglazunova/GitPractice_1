@@ -15,9 +15,11 @@ public class OverLoadMain {
      * JDK doesn't look for this one to run
      */
     public static void main (int num ) {
+
         System.out.println("num = " + num);
     }
     public static void main (boolean b ) {
+
         System.out.println("b = " + b);
     }
     }

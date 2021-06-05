@@ -1,6 +1,4 @@
-package gay28_loops;
-
-import java.time.LocalDate;
+package day28_loops;
 
 public class JavaCityCases {
     public static void main(String[] args) {

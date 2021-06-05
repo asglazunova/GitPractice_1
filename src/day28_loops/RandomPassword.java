@@ -1,4 +1,4 @@
-package gay28_loops;
+package day28_loops;
 
 import java.util.Random;
 
