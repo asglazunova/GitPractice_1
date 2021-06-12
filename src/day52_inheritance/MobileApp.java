@@ -6,6 +6,7 @@ public class MobileApp {
 
 
     public void UseTheApp (int minutes){
+
         System.out.println("Using " + name + " app for " + minutes + " minutes");
     }
 }
