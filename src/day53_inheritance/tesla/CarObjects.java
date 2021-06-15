@@ -26,7 +26,19 @@ public class CarObjects  {
         System.out.println("Count = " + ec2.getCount()); // call static method using object
         System.out.println("Count = " + ElectricCar.getCount()); // call static method using Classname
 
+        Roadster roadster = new Roadster("Roadster", 200000, 2022, 620);
+        System.out.println(roadster.toString());
+        roadster.drive(1000);
+        roadster.drive(600);
+        System.out.println(roadster.getCount()); // static method is inherited
 
+        ModelX modelX =new ModelX("Tesla", "Long Range", 114690, 2022, 600 );
+        System.out.println(modelX.toString());
+        modelX.drive(400);
+        System.out.println("Having lunch ...");
+        System.out.println(10);
+        System.out.println("Range remaining = " + modelX.getRange());
+        System.out.println(modelX.getCount());
 
 
 
