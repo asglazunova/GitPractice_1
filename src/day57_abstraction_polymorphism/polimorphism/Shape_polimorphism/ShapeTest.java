@@ -29,5 +29,18 @@ public class ShapeTest {
            eachShape.draw();
         }
 
+        drawShape(new Circle());
+        drawShape(new Square());
+        drawShape(triangle);
+    }
+
+    /**
+     * static method: drawShape
+     * accepts object of shape
+     * then calls draw() method
+     */
+    public static void drawShape(Shape shape) {
+        System.out.println("----Drawing shape----");
+        shape.draw();
     }
 }
